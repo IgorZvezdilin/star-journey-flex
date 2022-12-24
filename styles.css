@@ -15,13 +15,13 @@ h2 {
     text-align: center;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
     h2 {
         font-size: 2rem;
     }
 }
 
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 425px){
     h1 {
         font-size: 4rem;
     }
@@ -72,14 +72,14 @@ li a {
 
 @media only screen and (min-width: 426px){
 
-    .mobile-L {
+    .mobile{
         display: none;
     }
 
     
 }
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 768px){
 
     .desktop {
         display: none;
@@ -93,7 +93,7 @@ li a {
         padding:0 0.2975rem;
     }
 
-    header .mobile-L {
+    header .mobile {
         display: flex;
         justify-content: space-evenly;
     }
@@ -124,7 +124,7 @@ li a {
         display: none;
     }
 
-    header .mobile{
+    header .mobile {
         display: flex;
         justify-content: space-around;
     } 
@@ -192,7 +192,7 @@ li a {
         background-color: white;
     }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1024px){
 
     .mission-container button:hover {
         transition: height 0.5s linear, width 0.5s linear, margin-top 0.5s linear;
@@ -202,7 +202,7 @@ li a {
     }
 }
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 768px){
     
     .mission {
         flex-direction: row;
@@ -237,7 +237,8 @@ li a {
 }
 
 .journey {
-    width: 35rem;
+    height: 30rem;
+    width: 40rem;
     padding-right: 2rem;
     margin-bottom: 3rem;
     border: 0.1875rem solid black;
@@ -246,6 +247,12 @@ li a {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: black;
+}
+
+.text-image-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
 }
 
 .text-image {
@@ -260,7 +267,7 @@ li a {
 .product img {
     display: inline-block;
     height: 20rem;
-    width: 25rem;
+    width: auto;
     margin-left: 1rem;
     margin-bottom: 4rem;
     border: 0.125rem solid white;
@@ -268,7 +275,7 @@ li a {
     object-fit: cover;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
 
     .journey-container {
         padding: 0 1rem;
@@ -276,10 +283,11 @@ li a {
 
     .journey {
         padding: 0;
+        width: 80vw;
     }
 
     .text-image {
-        width: 24.225rem;
+        width: auto;
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
@@ -288,22 +296,23 @@ li a {
     }
 
     .product img {
-        height: auto;
-        width: 20rem;
+        width: 90%;
         margin: 0rem;
     }
 }
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 425px){
     .journey, .text-image {
         width: 20rem;
+        height: auto;
     }
     .product img {
         width: 15rem;
+        height: auto;
     }
 }
 
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 375px){
     .journey,.text-image {
         width: 18rem;
     }
@@ -408,7 +417,7 @@ li a {
     }
 }
 
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 375px){
     .investor img {
         height: 25rem;
     }
@@ -455,13 +464,13 @@ footer h3 {
     text-align: center;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
     footer .mail {
         display: none;
     }
 }
 
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 375px){
     footer img {
         display: none;
     }
