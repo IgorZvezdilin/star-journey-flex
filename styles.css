@@ -9,6 +9,28 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 426px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
 /*header start*/
 
 header ul {
@@ -46,6 +68,72 @@ li a {
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
     color: white;
+}
+
+@media only screen and (min-width: 426px){
+
+    .mobile-L {
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 426px){
+
+    .desktop {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+    header {
+        display: block;
+        padding:0 0.2975rem;
+    }
+
+    header .mobile-L {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    header li {
+        margin-top: auto;
+        margin: 1rem 0.2rem;
+        font-size: 1.25rem;
+    }
+
+    header button {
+        background-color: black;
+        color: white;
+        border: 0.125rem solid white;
+        border-radius: 0.5rem;
+        letter-spacing: 0.125rem;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.25rem;
+    }
+    header button:active {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .desktop {
+        display: none;
+    }
+
+    header .mobile{
+        display: flex;
+        justify-content: space-around;
+    } 
+}
+
+@media only screen and (max-width: 321px){
+    header li,header button {
+        font-size: 1rem;
+    }
 }
 
 /*header end*/
@@ -114,6 +202,29 @@ li a {
     }
 }
 
+@media only screen and (max-width: 426px){
+    
+    .mission {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 3rem;
+    }
+
+    .mission h1 {
+        font-size: 4rem;
+    }
+
+    .mission-container {
+        height: auto;
+    }
+
+    .mission-container button {
+        display: none;
+    }
+
+    
+}
+
 /*section mission end*/
 
 /*section product*/
@@ -126,7 +237,7 @@ li a {
 }
 
 .journey {
-    width: 40rem;
+    width: 35rem;
     padding-right: 2rem;
     margin-bottom: 3rem;
     border: 0.1875rem solid black;
@@ -154,7 +265,48 @@ li a {
     margin-bottom: 4rem;
     border: 0.125rem solid white;
     border-radius: 1.875rem;
-    object-fit: contain;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 426px) {
+
+    .journey-container {
+        padding: 0 1rem;
+    }
+
+    .journey {
+        padding: 0;
+    }
+
+    .text-image {
+        width: 24.225rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .product img {
+        height: auto;
+        width: 20rem;
+        margin: 0rem;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .journey, .text-image {
+        width: 20rem;
+    }
+    .product img {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .journey,.text-image {
+        width: 18rem;
+    }
 }
 
 /*section product end*/
@@ -167,7 +319,7 @@ li a {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-.teammate h1 {
+.teammate h2 {
     padding: 1rem 0 0 0;
     margin-bottom: 4rem;
 }
@@ -211,7 +363,7 @@ li a {
     background-color: black;
     padding: 2rem 2rem 0 2rem;
 }
-.investors h1 {
+.investors h2 {
     margin:0 0 2rem 0;
     padding: 0rem;
     color: white;
@@ -248,6 +400,18 @@ li a {
     width: 21rem;
     border-radius: 2rem;
     object-fit: cover;
+}
+
+@media only screen and (max-width: 426px){
+    .investor img {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .investor img {
+        height: 25rem;
+    }
 }
 /*section investors end*/
 
@@ -289,6 +453,18 @@ footer h3 {
     padding: 0.25em;
     border-radius: 1rem;
     text-align: center;
+}
+
+@media only screen and (max-width: 426px) {
+    footer .mail {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    footer img {
+        display: none;
+    }
 }
 
 /*footer end*/
