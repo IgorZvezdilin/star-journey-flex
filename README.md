@@ -1,13 +1,21 @@
 
 # WebSite for a fictional Company
+I create a website about space journey company to train my 
+skills with using flexbox for layout and for positioning elements (I know that using flexbox for layout is a bad practice).
+I also using media quaries to set determine size for brakpionts. 
 
-I create a website about space journey to train my 
-skills with using only flexbox 
-(i know that this is a bad practice) and using media quaries 
-for creating adaptive size. I create adaptive size for: laptop,
-tablets and mobiles with different sizes. 
+## Gadgets and breakpionts
+
+I create adaptive size for: laptop,
+tablets and mobiles with different sizes.
+
 I also try to use responsive width and height and try to 
 systematize css properties.
+
+## Website
+
+I use github pages for hosting, so you can find my website [here](https://igorzvezdilin.github.io/star-journey-flex/).
+
 ## Acknowledgements
 
  - [Unsplash](https://unsplash.com/) - i take the photos of people here
